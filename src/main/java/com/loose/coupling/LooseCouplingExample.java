@@ -1,28 +1,25 @@
 package com.loose.coupling;
 
-<<<<<<< HEAD
-public class LooseCouplingExample {
-
-    public static void main(String[] args){
-=======
 
 public class LooseCouplingExample {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        //by spring framework this can be done directly, without providing the dependency!
 
-        UserDataProvider databaseProvider = new UserDatabaseProvider();
-        UserManager userManagerWithDB = new UserManager(databaseProvider);
-        System.out.println(userManagerWithDB.getUserInfo());
+                //by spring framework this can be done directly, without providing the dependency!
 
-        UserDataProvider webServiceProvider = new WebServiceDataProvider();
+                UserDataProvider databaseProvider = new UserDatabaseProvider();
+                UserManager userManagerWithDB = new UserManager(databaseProvider);
+                System.out.println(userManagerWithDB.getUserInfo());
 
-        UserManager userManagerWithWebService = new UserManager(webServiceProvider);
-        System.out.println(userManagerWithWebService.getUserInfo());
+                UserDataProvider webServiceProvider = new WebServiceDataProvider();
 
-        UserManager userManagerWithWS = new UserManager(webServiceProvider);
-        System.out.println(userManagerWithWS.getUserInfo());
+                UserManager userManagerWithWebService = new UserManager(webServiceProvider);
+                System.out.println(userManagerWithWebService.getUserInfo());
 
-    }
-}
+                UserManager userManagerWithWS = new UserManager(webServiceProvider);
+                System.out.println(userManagerWithWS.getUserInfo());
+
+            }
+        }
+

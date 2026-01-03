@@ -10,11 +10,7 @@ public class App {
         MyBean myBean = (MyBean) context.getBean("myBean");
         System.out.println(myBean);
 
-        ApplicationContext context
-                = new ClassPathXmlApplicationContext("applicationBeanContext.xml");
 
-        MyBean myBean = (MyBean) context.getBean("myBean");
-        System.out.println(myBean);
 
     }
 }

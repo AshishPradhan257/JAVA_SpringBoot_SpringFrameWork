@@ -1,6 +1,7 @@
 package car.example.bean;
 
 public class MyBean {
+
     private String message;
 
     public void setMessage(String message) {
@@ -9,7 +10,9 @@ public class MyBean {
 
     public void showMessage(){
         System.out.println("Message:" + message);
-    }
+
+        System.out.println("Message: " + message);
+
 
     @Override
     public String toString() {

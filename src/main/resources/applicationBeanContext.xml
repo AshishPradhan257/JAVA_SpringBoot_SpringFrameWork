@@ -4,8 +4,15 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
     <bean id="myBean" class="car.example.bean.MyBean">
         <property name="message" value="i am a first bean"/>
+    </bean>
+
+    <!-- bean definitions here -->
+    <bean id="myBean" class="car.example.bean.MyBean">
+        <property name="message" value="I am a first bean"/>
+
     </bean>
 
 </beans>

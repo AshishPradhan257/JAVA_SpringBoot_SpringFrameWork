@@ -1,4 +1,4 @@
-package com.example.componentscan;
+package com.example.autowired.annotation;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -6,10 +6,13 @@ import org.springframework.stereotype.Component;
 @Component("employee1")
 public class Employee {
     private int employeeId;
+
     @Value("Hello")
     private String firstName;
+
     @Value("${java.home}")
     private String lastName;
+
     @Value("#{5*5}")
     private double salary;
 

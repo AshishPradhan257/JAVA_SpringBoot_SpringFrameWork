@@ -1,9 +1,7 @@
-package com.example.componentscan;
+package com.example.autowired.annotation;
 
-import car.example.constructor.injection.Car;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {
     public static void main(String[] args){
@@ -12,5 +10,8 @@ public class App {
 
         Employee employee = context.getBean("employee1", Employee.class);
         System.out.println(employee.toString());
+
+        Manager manager = context.getBean("manager", Manager.class);
+        System.out.print(manager.toString());
     }
 }

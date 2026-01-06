@@ -8,7 +8,7 @@ public class App {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Employee employee = context.getBean("employee1", Employee.class);
+        Employee employee = context.getBean("employee", Employee.class);
         System.out.println(employee.toString());
 
         Manager manager = context.getBean("manager", Manager.class);

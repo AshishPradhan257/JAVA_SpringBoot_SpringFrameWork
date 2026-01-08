@@ -14,3 +14,6 @@ public class App {
 
     }
 }
+
+// will start introduction to springboot from tomorrow! need to start documenting my stuff!
+// life's about to get serious
